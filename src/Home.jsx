@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 function Home() {
+  useEffect(() => {
+    return () => {
+      console.log("This is coming from Home Component while Destroy")
+    }
+  },[])
   return (
     <div>
       <h1 className="font-playwrite text-2xl">Hello</h1>

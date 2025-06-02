@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 function About() {
+  useEffect(() => {
+    console.log("This is coming from about component while mount")
+  },[])
   return (
     <section class="overflow-hidden pt-39 pb-17.5">
       <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">

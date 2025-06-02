@@ -4,6 +4,8 @@ import { useParams } from "react-router";
 function Blog() {
   const params = useParams();
   const [blog, setBlog] = useState();
+
+
   const fetchIndividualBlog = async (id) => {
     try {
       const getBlogData = await fetch(
